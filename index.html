@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Document</title>
+
+</head>
+<body>
+   
+<!--     
+## Part 1: The alerter
+
+Let's start out simple, in your `index.html` file, 
+create a form that contains a text input and a submit button. 
+From here, use Javascript to make it so that when the submit button 
+is clicked, 
+the page displays the text inside of the text input as a browser alert.
+ -->
+<div>
+    <form id="form2">
+<label>Enter your address</label>
+<input placeholder="Enter input" autocomplete="off" id="UserInput" type="text" >
+<input id="submitButton" type="submit">
+</div>
+
+
+<!-- 
+## Part 2: Sandwich builder
+
+Somewhere below your previous form, create a new form. The purpose of this form will be to allow the user to select ingredients that will go in a sandwich. Inside of your form, create at least ten checkbox inputs that correspond to various sandwich ingredients (wheat bread, lettuce, peppers, etc.). Additionally, create a submit button.
+
+Finally, wire up your form using Javascript so that upon clicking the submit button,
+ a browser alert is displayed with a string with all of the ingredients 
+ that the user selected by checking the inputs 
+ (i.e.: "Your sandwich contains: bread, pesto, tomato, mozzerella, spinach"). 
+ To do this, you'll need to build a string, querying each checkbox one at a time.
+  You could use a for-loop to do this but you are not required to do so.
+ -->
+ 
+ <div id="MakeAWich">
+ <h1>MessDaddys Sandwich Shop</h1>
+
+<div class="Bread" id="BreadSelect">
+<h3>Type of Bread</h3>
+<div id="B1"><input type="checkbox" id="whiteSelect"><label class="Bread">White</label></div>
+<div id="B2"><input type="checkbox" id="wheatSelect"><label class="Bread">Wheat</label></div>
+<div id="B3"><input type="checkbox" id="RyeSelect"><label class="Bread">Rye</label></div>
+<div id="B4"><input type="checkbox" id="HouseSelect"><label class="Bread">House Bread</label></div>
+</div>
+<div class="topping" id="toppingSelect">
+<h3>Toppings</h3>
+<div><input type="checkbox" id="pestoSelect"><label class="topping" id="pesto">pesto</label></div>
+<div><input type="checkbox" id="tomatoSelect"><label class="topping"  id="tomato">tomato</label></div>
+<div><input type="checkbox" id="mozzerellaSelect"><label class="topping"  id="mozzerella">mozzerella</label></div>
+<div><input type="checkbox" id="spinachSelect"><label class="topping" id="spinach">spinach</label></div>
+</div>
+<div class="meat" id="meats">
+    <h3>Choose your Meats</h3>
+    
+    <div><input type="checkbox" id="chickenSelctor" class="Meat">Chicken</input></div>
+    <div><input type="checkbox" id="turkeySelctor" class="Meat">turkey</input></div>
+    <div><input type="checkbox" id="HamSelector" class="Meat">Ham</input></div>
+    <div><input type="checkbox" id="PepperoniSelctor" class="Meat">Pepperoni</input></div>
+</div>
+</div>
+</form>
+<!-- ## Part 3: Haircut appointment scheduler
+
+Below your previous form, create another new form. 
+This form will represent a haircut scheduling form which should contain the following inputs:
+* a date input for what day the haircut should be scheduled for
+* a text input to allow the user to request a specific hair cutter
+* one set of two radio inputs that allows the user to select whether they have long or short hair
+* a submit button -->
+<form id="form3">
+    <div>
+        <h1>Barber Appointment Setter</h1>
+        <label>Enter the barber you wish to see</label>
+        <input id="BarberName"  placeholder="Barber Name" type="text"></input>
+        <input id="SubButton" type="submit">
+   </div>
+   <div id="DateTime">
+       <h3>select the day of haircut</h3>
+       <input type="date" id="DateAndTime">
+       <input type="radio" name="Date" id="Short">Short Hair
+       <input type="radio" name="Date" id="Long">Long Hair
+  
+    </div>
+
+
+</form>
+<form id="form4">
+    <div id="MakeCol">
+        <h1>Create Account</h1>
+        <input type="text"   id="UserName">UserName</input>
+        <input type="text"   id="PassWord">password</input>
+        <input type="text"   id="Confirm">confirm password</input>
+        <input type="submit" id="CreateAccount">
+    </div>
+</form>
+
+
+
+<script src="main.js"></script>
+</body>
+</html>
